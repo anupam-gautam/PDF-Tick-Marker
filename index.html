@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Tick Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Tick Marker</h1>
+    <p>Upload or drag-and-drop one or more PDFs, and we'll add ticks to every page except the first and last.</p>
+
+    <!-- Drag and Drop Area -->
+    <div id="dropZone" class="drop-zone">
+      <p>Drag & Drop PDFs here</p>
+      <p>or</p>
+      <input type="file" id="pdfUpload" accept="application/pdf" multiple />
+    </div>
+
+    <br />
+    
+    <button id="processBtn" disabled>Process PDFs</button>
+    <button id="downloadZipBtn" disabled>Download All as ZIP</button>
+
+    <div class="progress-container">
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="progressText">0%</span>
+    </div>
+
+    <br />
+    <div id="downloads"></div>
+
+    <p class="note">All processing happens locally — your files never leave your computer!</p>
+
+     <div class="branding">
+    Powered by <a href="https://www.ojaswiinstitution.com.np/" target="_blank">
+      Ojaswi Institution Pvt Ltd
+    </a>
+  </div>
+  </div>
+
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>

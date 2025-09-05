@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Tick Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Tick Marker</h1>
+    <p>Upload one or more PDFs, and we'll add ticks to every page except the first and last.</p>
+
+    <input type="file" id="pdfUpload" accept="application/pdf" multiple />
+    <br /><br />
+    <button id="processBtn" disabled>Process PDFs</button>
+    <br /><br />
+    
+    <div id="downloads"></div>
+
+    <p class="note">All processing happens in your browser — your PDFs never leave your computer.</p>
+  </div>
+
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.drop-zone {
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+
+.drop-zone.dragover {
+  background: #e8ffe8;
+  border-color: #4caf50;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.progress-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+progress {
+  width: 200px;
+  height: 20px;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+}
+.branding {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #555;
+}
+
+.branding a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.branding a:hover {
+  text-decoration: underline;
+}
